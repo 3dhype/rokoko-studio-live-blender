@@ -93,11 +93,11 @@ def register():
     )
     Scene.rsl_retargeting_use_pose = EnumProperty(
         name="Use Pose",
-        description='Select which pose of the source and target armature to use to retarget the animation.'
+        description='Select which pose of the source to use to retarget the animation.'
                     '\nBoth armatures should be in the same pose before retargeting',
         items=[
             ("REST", "Rest", "Select this to use the rest pose during retargeting."),
-            ("CURRENT", "Current", "Select this to use the current pose during retargeting.")
+            ("CURRENT", "Current", "Select this to use the current pose in the source during retargeting.")
         ]
     )
     Scene.rsl_retargeting_bone_list = CollectionProperty(
